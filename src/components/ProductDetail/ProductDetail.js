@@ -26,7 +26,7 @@ const ProductDetail = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:4000/product/${productKey}`)
+        fetch(`https://nameless-plateau-15904.herokuapp.com/product/${productKey}`)
         .then((response) =>response.json())
         .then((data) =>setProduct(data))
     },[productKey])
@@ -37,7 +37,7 @@ const ProductDetail = () => {
 const handlePlaceOrder = () =>{
     //   alert('Are you ready to Booking');
     const newBookings = {...loggedInUser,...selectedDate,...product};
-    fetch('http://localhost:4000/placeOrder',{
+    fetch('https://nameless-plateau-15904.herokuapp.com/placeOrder',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(newBookings)

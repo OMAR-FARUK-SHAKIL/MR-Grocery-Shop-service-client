@@ -11,7 +11,7 @@ const Inventory = () => {
 
   function loadData() {
     // useEffect(()=>{
-    fetch("http://localhost:4000/products")
+    fetch("https://nameless-plateau-15904.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         console.log("data=", data);
@@ -37,6 +37,7 @@ const Inventory = () => {
 // const allGoods =()=>{
 
 //   fetch("http://localhost:4000/products")
+//   fetch("https://nameless-plateau-15904.herokuapp.com//products")
 //     .then((res) => res.json())
 //     .then((data) => setProducts(data));
 
@@ -46,7 +47,7 @@ const Inventory = () => {
 
   const deleteProduct = (id) => {
      console.log(id);
-    fetch(`http://localhost:4000/delete/${id}`, {
+    fetch(`https://nameless-plateau-15904.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -69,7 +70,7 @@ const Inventory = () => {
       quantity: data.quantity,
       imageURL: imageURl,
     };
-    fetch("http://localhost:4000/addProduct", {
+    fetch("https://nameless-plateau-15904.herokuapp.com/addProduct", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(product),

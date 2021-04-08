@@ -10,7 +10,7 @@ const Orders = () => {
 
     useEffect(() =>{
 
-        fetch('http://localhost:4000/bookings?email='+loggedInUser.email,{
+        fetch('https://nameless-plateau-15904.herokuapp.com/bookings?email='+loggedInUser.email,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
