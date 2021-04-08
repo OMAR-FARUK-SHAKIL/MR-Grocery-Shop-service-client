@@ -1,0 +1,15 @@
+.twin-container{
+    /* display: flex; */
+}
+.product-container{
+    width: 100%;
+    margin: 20px;
+    
+    border-right: 1px solid lightgray;
+}
+
+#loading{
+    text-align: center;
+    color: rgb(245, 77, 77);
+    margin:400px auto;
+}

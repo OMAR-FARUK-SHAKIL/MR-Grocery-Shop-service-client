@@ -1,0 +1,21 @@
+#new-product{
+     display:none;
+    border: 2px solid pink;
+    border-radius:10px;
+    text-align:center;
+    background-color:lightgrey;
+    width: 400px;
+    padding:30px;
+    margin-left: 500px;
+}
+
+#manage-product{
+     display:none; 
+    border: 2px solid rgb(25, 40, 252);
+    border-radius:10px;
+    text-align:center;
+    /* width: 400px; */
+    padding:30px;
+    margin: 50px auto;
+    background-color:rgb(252, 207, 207);
+}
